@@ -1,5 +1,7 @@
+import LikeCounter from './LikeCounter/LikeCounter';
+
 function App() {
-  const name = "Sebastian";
+  const name = "Krystian";
   const names =['Adrian', 'Maciek', 'Pawel', 'Bartek'];
   return (
     <>
@@ -8,6 +10,7 @@ function App() {
             {name.length > 4 ? name : 'Hello firends'} 
           </p>
           <p> {names.map((name) => <li key={name}>{name}</li>) }</p>
+          <LikeCounter />
       </div>
     </>
   );
