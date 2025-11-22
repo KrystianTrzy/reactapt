@@ -1,0 +1,62 @@
+.dashboard-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.dashboard-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  color: #2d3748;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.stat {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 18px 32px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3182ce;
+}
+.stat-label {
+  display: block;
+  font-size: 1rem;
+  color: #4a5568;
+  margin-top: 6px;
+}
+
+.dashboard-activities {
+  margin-top: 24px;
+}
+.dashboard-activities h2 {
+  font-size: 1.3rem;
+  color: #2b6cb0;
+  margin-bottom: 12px;
+}
+.dashboard-activities ul {
+  list-style: none;
+  padding: 0;
+}
+.dashboard-activities li {
+  background: #ebf8ff;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #2a4365;
+  font-size: 1rem;
+}
