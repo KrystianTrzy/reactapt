@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./dashboard.css";
+import ThemeToggleButton from "../../components/ThemeToggleButton";
 import { themecontext } from "../../context/themecontext";
 
 const Dashboard = () => {
@@ -27,6 +28,7 @@ const Dashboard = () => {
         color: theme === "dark" ? "#f7fafc" : "#2d3748",
       }}
     >
+      <ThemeToggleButton />
       <h1>Witaj, {user.name}!</h1>
       <div className="dashboard-stats">
         <div className="stat">

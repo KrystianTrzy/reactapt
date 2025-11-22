@@ -11,19 +11,18 @@ function App() {
   const names = ["Adrian", "Maciek", "Pawel", "Bartek"];
   return (
     <ThemeProvider>
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Posts />} />
-          <Route path="/posts" element={<Posts />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/postdetail/:id" element={<PostDetail />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Posts />} />
+        <Route path="/posts" element={<Posts />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/postdetail/:id" element={<PostDetail />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
     </ThemeProvider>
   );
 }
 
 export default App;
-

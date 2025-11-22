@@ -1,6 +1,6 @@
 import { useState } from "react";
+import "./Login.css";
 import { useNavigate } from "react-router";
-import ThemeToggleButton from "../components/ThemeToggleButton";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -16,6 +16,7 @@ function Login() {
   return (
     <div className="login-container">
       <h1>LOGOWANIE</h1>
+
       <form onSubmit={handleSubmit} className="login-form">
         <label>Email:</label>
         <input
@@ -25,6 +26,7 @@ function Login() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+
         <label>Hasło:</label>
         <input
           type="password"
@@ -33,6 +35,7 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+
         <button type="submit">Zaloguj</button>
       </form>
     </div>

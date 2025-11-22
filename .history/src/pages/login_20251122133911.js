@@ -15,6 +15,7 @@ function Login() {
 
   return (
     <div className="login-container">
+      <ThemeToggleButton />
       <h1>LOGOWANIE</h1>
       <form onSubmit={handleSubmit} className="login-form">
         <label>Email:</label>

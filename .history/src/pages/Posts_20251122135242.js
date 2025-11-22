@@ -4,6 +4,7 @@ import ThemeToggleButton from "../components/ThemeToggleButton";
 function Posts() {
   return (
     <>
+      <ThemeToggleButton />
       <h1>Latest posts</h1>
       <article>
         <div className="posts">

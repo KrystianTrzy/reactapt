@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { themecontext } from "../../context/themecontext";
-import ThemeToggleButton from "../ThemeToggleButton";
 
 function Nav() {
   const location = useLocation();
   const islogin = location.pathname === "/login";
   const { theme } = useContext(themecontext);
-  return islogin ? null : (
+    return islogin ? null : (  
     <nav
       className="navbar"
       style={{
@@ -43,7 +42,7 @@ function Nav() {
         >
           Google
         </a>
-        <ThemeToggleButton />
+          <ThemeToggleButton />
       </div>
     </nav>
   );

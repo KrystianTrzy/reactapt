@@ -17,7 +17,7 @@ const Dashboard = () => {
   ];
 
   // Theme context
-  const { theme } = useContext(themecontext);
+  const { theme, tootgletheme } = useContext(themecontext);
 
   return (
     <div
@@ -27,6 +27,18 @@ const Dashboard = () => {
         color: theme === "dark" ? "#f7fafc" : "#2d3748",
       }}
     >
+      <div style={{ float: "right", marginBottom: 12 }}>
+        <label htmlFor="theme-select" style={{ marginRight: 8 }}>Zmień motyw:</label>
+        <select
+          id="theme-select"
+          value={theme}
+          onChange={tootgletheme}
+          style={{ padding: "4px 8px", borderRadius: 6 }}
+        >
+          <option value="light">Jasny</option>
+          <option value="dark">Ciemny</option>
+        </select>
+      </div>
       <h1>Witaj, {user.name}!</h1>
       <div className="dashboard-stats">
         <div className="stat">

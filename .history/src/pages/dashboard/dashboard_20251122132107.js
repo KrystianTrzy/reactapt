@@ -17,7 +17,7 @@ const Dashboard = () => {
   ];
 
   // Theme context
-  const { theme } = useContext(themecontext);
+  const { theme, tootgletheme } = useContext(themecontext);
 
   return (
     <div
@@ -27,6 +27,12 @@ const Dashboard = () => {
         color: theme === "dark" ? "#f7fafc" : "#2d3748",
       }}
     >
+      <button
+        style={{ float: "right", marginBottom: 12 }}
+        onClick={tootgletheme}
+      >
+        Przełącz motyw ({theme === "dark" ? "Ciemny" : "Jasny"})
+      </button>
       <h1>Witaj, {user.name}!</h1>
       <div className="dashboard-stats">
         <div className="stat">

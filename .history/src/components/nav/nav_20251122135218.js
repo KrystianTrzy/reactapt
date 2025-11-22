@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { themecontext } from "../../context/themecontext";
-import ThemeToggleButton from "../ThemeToggleButton";
 
 function Nav() {
   const location = useLocation();
@@ -15,26 +14,13 @@ function Nav() {
       style={{
         backgroundColor: theme === "dark" ? "#23272f" : "#333",
         color: theme === "dark" ? "#f7fafc" : "white",
-        boxShadow:
-          theme === "dark"
-            ? "0 2px 5px rgba(0,0,0,0.6)"
-            : "0 2px 5px rgba(0,0,0,0.2)",
+        boxShadow: theme === "dark" ? "0 2px 5px rgba(0,0,0,0.6)" : "0 2px 5px rgba(0,0,0,0.2)"
       }}
     >
       <span className="logo">logo</span>
       <div className="menu">
-        <Link
-          to="/posts"
-          style={{ color: theme === "dark" ? "#f7fafc" : "white" }}
-        >
-          Posts
-        </Link>
-        <Link
-          to="/login"
-          style={{ color: theme === "dark" ? "#f7fafc" : "white" }}
-        >
-          Login
-        </Link>
+        <Link to="/posts" style={{ color: theme === "dark" ? "#f7fafc" : "white" }}>Posts</Link>
+        <Link to="/login" style={{ color: theme === "dark" ? "#f7fafc" : "white" }}>Login</Link>
         <a
           href="https://google.com"
           target="_blank"
@@ -43,7 +29,6 @@ function Nav() {
         >
           Google
         </a>
-        <ThemeToggleButton />
       </div>
     </nav>
   );

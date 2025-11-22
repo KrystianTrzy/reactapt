@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { themecontext } from "../../context/themecontext";
-import ThemeToggleButton from "../ThemeToggleButton";
 
 function Nav() {
   const location = useLocation();
@@ -43,7 +42,6 @@ function Nav() {
         >
           Google
         </a>
-        <ThemeToggleButton />
       </div>
     </nav>
   );

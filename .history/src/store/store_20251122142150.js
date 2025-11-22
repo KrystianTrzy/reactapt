@@ -1,0 +1,1 @@
+import { configures } from "@testing-library/dom";
