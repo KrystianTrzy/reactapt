@@ -1,0 +1,46 @@
+.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 350px;
+    border-radius: 0.5rem;
+    background: var(--card);
+    margin: 1rem auto;
+    color: #0f172a;
+    display: flex   ;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.post p {
+    margin: 0 0 0.8rem 0;
+    font-weight: 600;
+}
+
+.actions button {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.actions button:first-child {
+    background: var(--accent);
+    color: white;
+}
+
+.actions button:last-child {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid #e6e9ef;
+}
+
+.actions button:hover {
+    transform: translateY(-1px);
+}
